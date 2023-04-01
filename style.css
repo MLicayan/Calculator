@@ -1,0 +1,98 @@
+body{
+    background: linear-gradient(-45deg, #172937, #244C53, #CF7750, #D5A089);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+
+}
+
+.container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffff;
+    border-radius: 14px;
+    padding-bottom: 20px;
+    width: 320px;
+}
+
+.result{
+    width: 100%;
+	height: 60px;
+	padding: 40px 0;
+	background: #E1D8D0;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.buttons{
+    padding: 20px 20px 0 20px;
+}
+
+.row{
+    width: 280px;
+    float: left;
+}
+
+input[type=button]{
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    margin: 5px;
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+input[type=reset]{
+    width: 310px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+input[type=button]:hover, [type=reset]:hover{
+    background: #e1d8d073;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+input[type=text]{
+    width: 270px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: right;
+    margin: 0 25px;
+}
+
+
+/*SOURCE W3SCHOOL ANIMATION GRADIENT BACKGROUND
+https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php*/
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
